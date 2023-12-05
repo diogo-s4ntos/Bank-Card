@@ -4,7 +4,7 @@ The function 'Submit' not working, for this, you can upload the project and modi
 
 <h1>Screenshot</h1>
 
-![bank-card](https://github.com/diogo-s4ntos/Card-Info/assets/117995697/5c26e2b1-3b66-432b-8872-986ac2a49446)
+![bank-card](https://github.com/diogo-s4ntos/Bank-Card/assets/117995697/eb3ccfeb-3497-4022-80cd-c27a97ff9e02)
 
 <h1>Link</h1>
 <li>Live site URL: <a href="">Click Here</a></li>
